@@ -1,11 +1,11 @@
     /* styles.css */
     body {
         font-family: sans-serif;
-        background-color: #f0f0f0;
+        background-color: #000000;
     }
     h1 {
-        color: navy;
+        color: orange;
     }
-                p {
-                color: red; /* Changes all paragraph text to red */
-             }
+    p {
+        color: orange; /* Changes all paragraph text to orange */
+    }
