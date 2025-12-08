@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - SwirlHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="100,180 70,300 130,300" fill="#D2691E" stroke="#8B4513" stroke-width="2"/>
+          <polygon points="85,220 115,220 125,280 75,280" fill="#CD853F" stroke="#8B4513" stroke-width="1.5"/>
+          <line x1="75" y1="200" x2="125" y2="200" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
+          <line x1="74" y1="220" x2="126" y2="220" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
+          <line x1="73" y1="240" x2="127" y2="240" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
+          <line x1="72" y1="260" x2="128" y2="260" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
+          <line x1="71" y1="280" x2="129" y2="280" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
+          <circle cx="100" cy="140" r="70" fill="#FF8C00" stroke="#FF6B00" stroke-width="2"/>
+          <ellipse cx="85" cy="110" rx="25" ry="20" fill="#FFB347" opacity="0.6"/>
+          <ellipse cx="65" cy="140" rx="15" ry="20" fill="#FFB347" opacity="0.4"/>
+          <path d="M 70 120 Q 80 110, 90 115" fill="none" stroke="#FF6B00" stroke-width="2" opacity="0.7"/>
+          <path d="M 100 100 Q 115 105, 120 120" fill="none" stroke="#FF6B00" stroke-width="2" opacity="0.7"/>
+          <path d="M 110 135 Q 105 150, 90 145" fill="none" stroke="#FF6B00" stroke-width="2" opacity="0.7"/>
+          <ellipse cx="100" cy="165" rx="60" ry="12" fill="#000000" opacity="0.15"/>
+        </svg>
+        SWIRLHUB
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html" class="active">Feed</a></li>
+          <li><a href="about.html">Explore</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Ice Cream Feed</h1>
+      <p class="subtitle">See What People Are Eating</p>
+      <p>Follow the latest posts about amazing ice cream flavors, spots, and cravings from the community!</p>
+    </section>
+
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="card">
+            <div class="card-avatar"><img src="assets/marcus-chen.png" alt="Marcus Chen"></div>
+              <p class="card-timestamp">@marcuschen • 2 days ago</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-title">Cookie Dough Dream</p>
+            <svg class="post-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#87CEEB"/>
+              <circle cx="200" cy="120" r="80" fill="#D2B48C"/>
+              <circle cx="170" cy="100" r="8" fill="#8B4513"/>
+              <circle cx="210" cy="105" r="8" fill="#8B4513"/>
+              <circle cx="190" cy="135" r="8" fill="#8B4513"/>
+              <circle cx="220" cy="130" r="8" fill="#8B4513"/>
+              <circle cx="160" cy="120" r="6" fill="#8B4513"/>
+              <polygon points="200,200 140,280 260,280" fill="#CD853F"/>
+              <text x="200" y="250" font-size="24" fill="#FF8C00" text-anchor="middle" font-weight="bold">🍪 Cookie Dough 🍪</text>
+            </svg>
+            <p class="card-description">OMG just had the most INSANE cookie dough ice cream from this tiny shop downtown!!! 😍 The chunks are SO big and creamy and literally the best thing I've ever tasted. I'm going back tomorrow for sure!!!</p>
+            <p class="card-date">Flavor: Cookie Dough • Rating: 10/10 ⭐</p>
+          </div>
+          <div class="post-engagement">
+            <div class="engagement-item">
+              <span class="engagement-icon">❤️</span>
+              <span>847</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">💬</span>
+              <span>34</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">🔄</span>
+              <span>156</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">📤</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar"><img src="assets/sarah-mitchell.png" alt="Sarah Mitchell"></div>
+            <div class="card-user-info">
+              <p class="card-username">Sarah Mitchell</p>
+              <p class="card-timestamp">@sarahmitch • 1 day ago</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-title">Strawberry Cheesecake Heaven</p>
+            <svg class="post-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#FFE4E1"/>
+              <circle cx="200" cy="100" r="90" fill="#FFB6C1"/>
+              <circle cx="200" cy="110" r="70" fill="#FFC0CB"/>
+              <path d="M 170 140 Q 200 160 230 140" fill="#FFB6C1" opacity="0.8"/>
+              <polygon points="200,200 130,280 270,280" fill="#CD853F"/>
+              <text x="200" y="250" font-size="24" fill="#FF8C00" text-anchor="middle" font-weight="bold">🍓 Strawberry 🍓</text>
+            </svg>
+            <p class="card-description">omg omg omg this strawberry cheesecake flavor is actually PERFECT 🍓 the cheesecake swirl is like so creamy and dreamy and the strawberry is so fresh i can't even!! best ice cream experience of my LIFE honestly</p>
+            <p class="card-date">Flavor: Strawberry Cheesecake • Rating: 10/10 ⭐</p>
+          </div>
+          <div class="post-engagement">
+            <div class="engagement-item">
+              <span class="engagement-icon">❤️</span>
+              <span>1,203</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">💬</span>
+              <span>89</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">🔄</span>
+              <span>342</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">📤</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar"><img src="assets/david-rodriguez.png" alt="David Rodriguez"></div>
+            <div class="card-user-info">
+              <p class="card-username">David Rodriguez</p>
+              <p class="card-timestamp">@davidrod • 4 hours ago</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-title">Mint Chocolate Chip Perfection</p>
+            <svg class="post-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#B0E0E6"/>
+              <circle cx="200" cy="110" r="85" fill="#98FF98"/>
+              <circle cx="200" cy="120" r="70" fill="#90EE90"/>
+              <circle cx="170" cy="100" r="12" fill="#8B4513"/>
+              <circle cx="210" cy="110" r="12" fill="#8B4513"/>
+              <circle cx="190" cy="135" r="12" fill="#8B4513"/>
+              <circle cx="220" cy="140" r="12" fill="#8B4513"/>
+              <polygon points="200,200 130,280 270,280" fill="#CD853F"/>
+              <text x="200" y="250" font-size="24" fill="#FF8C00" text-anchor="middle" font-weight="bold">🤑 Mint Chip 🤑</text>
+            </svg>
+            <p class="card-description">just been eating mint chocolate chip for like 2 hours straight and literally cannot stop 😋 the mint is so refreshing and smooth and the chocolate chips are literally perfect chunks of happiness idk how they even do it</p>
+            <p class="card-date">Flavor: Mint Choco Chip • Rating: 9/10 ⭐</p>
+          </div>
+          <div class="post-engagement">
+            <div class="engagement-item">
+              <span class="engagement-icon">❤️</span>
+              <span>562</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">💬</span>
+              <span>45</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">🔄</span>
+              <span>128</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">📤</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar"><img src="assets/emma-thompson.png" alt="Emma Thompson"></div>
+            <div class="card-user-info">
+              <p class="card-username">Emma Thompson</p>
+              <p class="card-timestamp">@emmathompson • 5 hours ago</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-title">Butter Pecan is ELITE</p>
+            <svg class="post-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#FFEFD5"/>
+              <circle cx="200" cy="110" r="85" fill="#F4A460"/>
+              <circle cx="200" cy="120" r="70" fill="#DEB887"/>
+              <ellipse cx="170" cy="100" rx="10" ry="15" fill="#8B6914"/>
+              <ellipse cx="210" cy="105" rx="10" ry="15" fill="#8B6914"/>
+              <ellipse cx="190" cy="135" rx="10" ry="15" fill="#8B6914"/>
+              <ellipse cx="220" cy="140" rx="10" ry="15" fill="#8B6914"/>
+              <polygon points="200,200 130,280 270,280" fill="#CD853F"/>
+              <text x="200" y="250" font-size="24" fill="#FF8C00" text-anchor="middle" font-weight="bold">🥜 Butter Pecan 🥜</text>
+            </svg>
+            <p class="card-description">omigosh why is butter pecan SO underrated?? just had the most luxurious creamy buttery pecan ice cream and im literally obsessed now 🤤 rich and smooth and nutty and EVERYTHING is right with this flavor honestly iconic</p>
+            <p class="card-date">Flavor: Butter Pecan • Rating: 10/10 ⭐</p>
+          </div>
+          <div class="post-engagement">
+            <div class="engagement-item">
+              <span class="engagement-icon">❤️</span>
+              <span>923</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">💬</span>
+              <span>67</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">🔄</span>
+              <span>234</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">📤</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar"><img src="assets/james-wilson.png" alt="James Wilson"></div>
+            <div class="card-user-info">
+              <p class="card-username">James Wilson</p>
+              <p class="card-timestamp">@jameswilson • 6 hours ago</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-title">Cookies and Cream Explosion</p>
+            <svg class="post-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#F5F5F5"/>
+              <circle cx="200" cy="110" r="85" fill="#FFFACD"/>
+              <circle cx="200" cy="120" r="70" fill="#FFFFE0"/>
+              <circle cx="160" cy="95" r="10" fill="#333"/>
+              <circle cx="200" cy="90" r="10" fill="#333"/>
+              <circle cx="240" cy="100" r="10" fill="#333"/>
+              <circle cx="180" cy="135" r="10" fill="#333"/>
+              <circle cx="220" cy="140" r="10" fill="#333"/>
+              <polygon points="200,200 130,280 270,280" fill="#CD853F"/>
+              <text x="200" y="250" font-size="24" fill="#FF8C00" text-anchor="middle" font-weight="bold">🍪 Cookies & Cream 🍪</text>
+            </svg>
+            <p class="card-description">OMG OMG OMG COOKIES AND CREAM IS PEAK ICE CREAM 🍪 the cookie crumbles are EVERYWHERE and the cream is so fluffy and amazing i just ordered another scoop lol this is literally my new favorite thing in the entire world forever</p>
+            <p class="card-date">Flavor: Cookies & Cream • Rating: 10/10 ⭐</p>
+          </div>
+          <div class="post-engagement">
+            <div class="engagement-item">
+              <span class="engagement-icon">❤️</span>
+              <span>1,456</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">💬</span>
+              <span>112</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">🔄</span>
+              <span>567</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">📤</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar"><img src="assets/lisa-anderson.png" alt="Lisa Anderson"></div>
+            <div class="card-user-info">
+              <p class="card-username">Lisa Anderson</p>
+              <p class="card-timestamp">@lisaanderson • 8 hours ago</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-title">Vanilla is Actually SO Good</p>
+            <svg class="post-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#FFFACD"/>
+              <circle cx="200" cy="110" r="85" fill="#FFFAF0"/>
+              <circle cx="200" cy="120" r="70" fill="#FFFFE0"/>
+              <path d="M 170 110 Q 200 130 230 110" fill="#F0E68C" opacity="0.6"/>
+              <path d="M 160 130 Q 200 145 240 130" fill="#F0E68C" opacity="0.6"/>
+              <polygon points="200,200 130,280 270,280" fill="#CD853F"/>
+              <text x="200" y="250" font-size="24" fill="#FF8C00" text-anchor="middle" font-weight="bold">✨ Classic Vanilla ✨</text>
+            </svg>
+            <p class="card-description">wait why did i sleep on vanilla ice cream all these years?? just had some LEGIT artisanal vanilla and omg the flavor is so delicate and creamy and perfect?? sometimes the simple things really are the best honestly feeling very enlightened rn</p>
+            <p class="card-date">Flavor: Vanilla • Rating: 9/10 ⭐</p>
+          </div>
+          <div class="post-engagement">
+            <div class="engagement-item">
+              <span class="engagement-icon">❤️</span>
+              <span>734</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">💬</span>
+              <span>78</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">🔄</span>
+              <span>189</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">📤</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar"><img src="assets/alex-kumar.png" alt="Alex Kumar"></div>
+            <div class="card-user-info">
+              <p class="card-username">Alex Kumar</p>
+              <p class="card-timestamp">@alexkumar • 10 hours ago</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-title">Rocky Road Vibes</p>
+            <svg class="post-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#D2B48C"/>
+              <circle cx="200" cy="110" r="85" fill="#8B4513"/>
+              <circle cx="200" cy="120" r="70" fill="#A0522D"/>
+              <rect x="170" y="90" width="12" height="12" fill="#FFB6C1"/>
+              <rect x="200" y="100" width="12" height="12" fill="#FFB6C1"/>
+              <rect x="225" y="95" width="12" height="12" fill="#FFB6C1"/>
+              <ellipse cx="180" cy="140" rx="8" ry="6" fill="#D4A76A"/>
+              <ellipse cx="220" cy="135" rx="8" ry="6" fill="#D4A76A"/>
+              <polygon points="200,200 130,280 270,280" fill="#CD853F"/>
+              <text x="200" y="250" font-size="24" fill="#FF8C00" text-anchor="middle" font-weight="bold">🏔️ Rocky Road 🏔️</text>
+            </svg>
+            <p class="card-description">omigosh tried this rocky road ice cream and the texture is INSANE 🏔️ like you got the marshmallows, the nuts, the chocolate swirl all happening at once and my brain can barely process how good it is?? this is the one guys this is THE ONE</p>
+            <p class="card-date">Flavor: Rocky Road • Rating: 10/10 ⭐</p>
+          </div>
+          <div class="post-engagement">
+            <div class="engagement-item">
+              <span class="engagement-icon">❤️</span>
+              <span>892</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">💬</span>
+              <span>156</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">🔄</span>
+              <span>423</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">📤</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar"><img src="assets/nina-patel.png" alt="Nina Patel"></div>
+            <div class="card-user-info">
+              <p class="card-username">Nina Patel</p>
+              <p class="card-timestamp">@ninapatel • 12 hours ago</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-title">Salted Caramel SLAPS</p>
+            <svg class="post-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#FFE4B5"/>
+              <circle cx="200" cy="110" r="85" fill="#CD853F"/>
+              <circle cx="200" cy="120" r="70" fill="#DAA520"/>
+              <path d="M 170 100 Q 200 130 230 100" fill="#8B4513" opacity="0.5"/>
+              <path d="M 160 130 Q 200 150 240 130" fill="#8B4513" opacity="0.5"/>
+              <circle cx="190" cy="110" r="4" fill="#FFF"/>
+              <circle cx="220" cy="135" r="4" fill="#FFF"/>
+              <polygon points="200,200 130,280 270,280" fill="#CD853F"/>
+              <text x="200" y="250" font-size="24" fill="#FF8C00" text-anchor="middle" font-weight="bold">🍮 Salted Caramel 🍮</text>
+            </svg>
+            <p class="card-description">YESSS salted caramel ice cream just hit different??? like the sweet and salty combo is GENIUS and so creamy and omigosh i literally cannot describe how good this is just GO GET SOME RN trust me on this one 🍮</p>
+            <p class="card-date">Flavor: Salted Caramel • Rating: 10/10 ⭐</p>
+          </div>
+          <div class="post-engagement">
+            <div class="engagement-item">
+              <span class="engagement-icon">❤️</span>
+              <span>1,567</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">💬</span>
+              <span>203</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">🔄</span>
+              <span>678</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">📤</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar"><img src="assets/robert-hayes.png" alt="Robert Hayes"></div>
+            <div class="card-user-info">
+              <p class="card-username">Robert Hayes</p>
+              <p class="card-timestamp">@roberthayes • 14 hours ago</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-title">Pistachio Revelation</p>
+            <svg class="post-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#E6F3E6"/>
+              <circle cx="200" cy="110" r="85" fill="#6B8E23"/>
+              <circle cx="200" cy="120" r="70" fill="#9ACD32"/>
+              <circle cx="170" cy="100" r="7" fill="#556B2F"/>
+              <circle cx="210" cy="105" r="7" fill="#556B2F"/>
+              <circle cx="190" cy="135" r="7" fill="#556B2F"/>
+              <circle cx="220" cy="140" r="7" fill="#556B2F"/>
+              <polygon points="200,200 130,280 270,280" fill="#CD853F"/>
+              <text x="200" y="250" font-size="24" fill="#FF8C00" text-anchor="middle" font-weight="bold">💚 Pistachio 💚</text>
+            </svg>
+            <p class="card-description">omg i finally understand the pistachio hype 💚 just had the most creamy delicate pistachio ice cream and it's like SO sophisticated and delicious?? luxury flavor for sure this is what fancy tastes like honestly</p>
+            <p class="card-date">Flavor: Pistachio • Rating: 9/10 ⭐</p>
+          </div>
+          <div class="post-engagement">
+            <div class="engagement-item">
+              <span class="engagement-icon">❤️</span>
+              <span>645</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">💬</span>
+              <span>92</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">🔄</span>
+              <span>201</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">📤</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-avatar"><img src="assets/victoria-chen.png" alt="Victoria Chen"></div>
+            <div class="card-user-info">
+              <p class="card-username">Victoria Chen</p>
+              <p class="card-timestamp">@victoriachen • 18 hours ago</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-title">Brownie Batter Supreme</p>
+            <svg class="post-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#3E2723"/>
+              <circle cx="200" cy="110" r="85" fill="#5D4037"/>
+              <circle cx="200" cy="120" r="70" fill="#795548"/>
+              <circle cx="170" cy="90" r="8" fill="#FFD700"/>
+              <circle cx="210" cy="100" r="8" fill="#FFD700"/>
+              <circle cx="200" cy="125" r="8" fill="#FFD700"/>
+              <circle cx="180" cy="140" r="8" fill="#FFD700"/>
+              <circle cx="220" cy="135" r="8" fill="#FFD700"/>
+              <rect x="165" y="105" width="10" height="10" fill="#DAA520"/>
+              <rect x="220" y="115" width="10" height="10" fill="#DAA520"/>
+              <polygon points="200,200 130,280 270,280" fill="#CD853F"/>
+              <text x="200" y="250" font-size="24" fill="#FF8C00" text-anchor="middle" font-weight="bold">🍫 Brownie Batter 🍫</text>
+            </svg>
+            <p class="card-description">omigosh omigosh OMIGOSH the brownie batter ice cream is literally HEAVEN 🍫 like the batter chunks are everywhere and it's chocolatey and fudgy and honestly i've never been happier in my entire life this is it this is peak ice cream</p>
+            <p class="card-date">Flavor: Brownie Batter • Rating: 10/10 ⭐</p>
+          </div>
+          <div class="post-engagement">
+            <div class="engagement-item">
+              <span class="engagement-icon">❤️</span>
+              <span>1,089</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">💬</span>
+              <span>134</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">🔄</span>
+              <span>445</span>
+            </div>
+            <div class="engagement-item">
+              <span class="engagement-icon">📤</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SwirlHub. All rights reserved. Celebrating swirl tape culture worldwide.</p>
+  </footer>
+</body>
+</html>
