@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mini Web DAW</title>
+    <link rel="stylesheet" href="css/daw.css">
+  </head>
+  <body>
+    <nav class="topnav">
+      <div class="brand"><a href="index.html">Mini Web DAW</a></div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="#">Patterns</a>
+        <a href="#">Mixer</a>
+        <a href="#">Help</a>
+      </div>
+    </nav>
+
+    <header class="transportbar">
+      <div class="transport-left">
+        <button id="playBtn" class="btn primary">Play</button>
+        <button id="stopBtn" class="btn">Stop</button>
+        <label class="bpm">BPM <input id="bpm" type="number" value="120" min="30" max="300"></label>
+      </div>
+      <div class="transport-right">
+        <label style="color:var(--muted);">Length (bars)
+          <input id="exportBars" type="number" min="1" max="64" value="4" style="width:60px;margin-left:6px;padding:6px;border-radius:6px;border:1px solid rgba(255,255,255,0.03);background:#09101a;color:var(--muted)">
+        </label>
+        <button id="exportBtn" class="btn">Export WAV</button>
+        <button id="savePattern" class="btn">Save Pattern</button>
+        <select id="loadPattern" class="select"></select>
+      </div>
+    </header>
+
+    <div class="daw-app container">
+      <aside class="sidebar" id="sidebar">
+        <h3>Channel Rack</h3>
+        <div id="channelList"></div>
+      </aside>
+
+      <section class="main-area">
+        <section id="tracks" class="sequencer"></section>
+        <section class="playlist">
+          <h4>Playlist / Arranger</h4>
+          <div id="playlistGrid"></div>
+          <button id="addPatternSlot" class="btn">Add Slot</button>
+          <button id="clearPlaylist" class="btn">Clear</button>
+        </section>
+      </section>
+
+      <aside class="mixer" id="mixer">
+        <h3>Mixer</h3>
+        <div id="mixerChannels"></div>
+        <div class="master-strip">
+          <div class="label">Master</div>
+          <input id="masterFader" class="slider" type="range" min="0" max="1" step="0.01" value="0.9" />
+        </div>
+      </aside>
+    </div>
+
+    <script src="https://unpkg.com/tone/build/Tone.js"></script>
+    <script defer src="assets/js/daw.js"></script>
+
+    <!-- Piano roll modal -->
+    <div id="pianoRollModal" class="modal" aria-hidden="true">
+      <div class="modal-inner">
+        <div class="modal-header">
+          <h3 id="pianoTitle">Piano Roll</h3>
+          <button id="closePiano" class="btn">Close</button>
+        </div>
+        <div id="pianoGrid" class="piano-grid"></div>
+        <div style="margin-top:8px;display:flex;gap:8px;justify-content:flex-end">
+          <button id="pianoSave" class="btn primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

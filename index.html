@@ -1,106 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SwirlHub - Share Your Ice Cream</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <div class="header-container">
-      <a href="index.html" class="logo">
-        <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="100,180 70,300 130,300" fill="#D2691E" stroke="#8B4513" stroke-width="2"/>
-          <polygon points="85,220 115,220 125,280 75,280" fill="#CD853F" stroke="#8B4513" stroke-width="1.5"/>
-          <line x1="75" y1="200" x2="125" y2="200" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
-          <line x1="74" y1="220" x2="126" y2="220" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
-          <line x1="73" y1="240" x2="127" y2="240" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
-          <line x1="72" y1="260" x2="128" y2="260" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
-          <line x1="71" y1="280" x2="129" y2="280" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
-          <circle cx="100" cy="140" r="70" fill="#FF8C00" stroke="#FF6B00" stroke-width="2"/>
-          <ellipse cx="85" cy="110" rx="25" ry="20" fill="#FFB347" opacity="0.6"/>
-          <ellipse cx="65" cy="140" rx="15" ry="20" fill="#FFB347" opacity="0.4"/>
-          <path d="M 70 120 Q 80 110, 90 115" fill="none" stroke="#FF6B00" stroke-width="2" opacity="0.7"/>
-          <path d="M 100 100 Q 115 105, 120 120" fill="none" stroke="#FF6B00" stroke-width="2" opacity="0.7"/>
-          <path d="M 110 135 Q 105 150, 90 145" fill="none" stroke="#FF6B00" stroke-width="2" opacity="0.7"/>
-          <ellipse cx="100" cy="165" rx="60" ry="12" fill="#000000" opacity="0.15"/>
-        </svg>
-        SWIRLHUB
-      </a>
-      <nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mini Web DAW — Home</title>
+    <link rel="stylesheet" href="css/daw.css">
+  </head>
+  <body>
+    <nav class="topnav">
+      <div class="brand">Mini Web DAW</div>
+      <div class="navlinks"><a href="daw.html">Open DAW</a></div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <h1>Lightweight Web DAW</h1>
+        <p>Create beats and arrangements in your browser. Sample loading, step sequencer, per-track pan, reverb & delay, pattern saving, MIDI input and export to WAV.</p>
+        <a class="cta" href="daw.html">Open the DAW</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="features">
+        <h2>Features</h2>
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="gallery.html">Feed</a></li>
-          <li><a href="about.html">Explore</a></li>
+          <li>16-step sequencer with 8 tracks</li>
+          <li>Load your own samples per track</li>
+          <li>Per-track pan, volume, mute, reverb & delay sends</li>
+          <li>Save/load patterns (localStorage)</li>
+          <li>Export mix to WAV</li>
+          <li>Basic Web MIDI support</li>
         </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <h1>SWIRLHUB 🍦</h1>
-      <p class="subtitle">The Social Network for Ice Cream Lovers</p>
-      <p>Share your favorite ice cream flavors, discover amazing spots, and connect with the global community of ice cream enthusiasts. Join thousands of people celebrating frozen treats!</p>
-      <a href="gallery.html" class="cta-button">See the Feed</a>
-    </section>
-
-    <div class="container">
-      <section class="ice-cream-section">
-        <svg class="ice-cream-graphic" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="100,180 70,300 130,300" fill="#D2691E" stroke="#8B4513" stroke-width="2"/>
-          <polygon points="85,220 115,220 125,280 75,280" fill="#CD853F" stroke="#8B4513" stroke-width="1.5"/>
-          <line x1="75" y1="200" x2="125" y2="200" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
-          <line x1="74" y1="220" x2="126" y2="220" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
-          <line x1="73" y1="240" x2="127" y2="240" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
-          <line x1="72" y1="260" x2="128" y2="260" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
-          <line x1="71" y1="280" x2="129" y2="280" stroke="#8B4513" stroke-width="1" opacity="0.5"/>
-          <circle cx="100" cy="140" r="70" fill="#FF8C00" stroke="#FF6B00" stroke-width="2"/>
-          <ellipse cx="85" cy="110" rx="25" ry="20" fill="#FFB347" opacity="0.6"/>
-          <ellipse cx="65" cy="140" rx="15" ry="20" fill="#FFB347" opacity="0.4"/>
-          <path d="M 70 120 Q 80 110, 90 115" fill="none" stroke="#FF6B00" stroke-width="2" opacity="0.7"/>
-          <path d="M 100 100 Q 115 105, 120 120" fill="none" stroke="#FF6B00" stroke-width="2" opacity="0.7"/>
-          <path d="M 110 135 Q 105 150, 90 145" fill="none" stroke="#FF6B00" stroke-width="2" opacity="0.7"/>
-          <ellipse cx="100" cy="165" rx="60" ry="12" fill="#000000" opacity="0.15"/>
-        </svg>
-        <p class="ice-cream-label">Everyone's Favorite - One Scoop At a Time!</p>
       </section>
+    </main>
 
-      <section>
-        <h2>Why Join SwirlHub?</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-          <div class="card">
-            <div class="card-header">
-              <h3 style="color: var(--dark); margin: 0;">🍨 Find Amazing Flavors</h3>
-            </div>
-            <div class="card-body">
-              <p>Browse a feed of ice cream posts from people worldwide. Discover new flavors, hidden local spots, and must-try combinations shared by the community.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <h3 style="color: var(--dark); margin: 0;">👥 Share Your Favorites</h3>
-            </div>
-            <div class="card-body">
-              <p>Connect with fellow ice cream lovers. Share your latest scoops, get flavor recommendations, and gush about the best ice cream experiences with friends.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <h3 style="color: var(--dark); margin: 0;">🔥 See What's Trending</h3>
-            </div>
-            <div class="card-body">
-              <p>Stay updated with trending flavors, viral posts, and community favorites. See what everyone's obsessed with and what people are going crazy for right now.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 SwirlHub. All rights reserved. Celebrating ice cream lovers worldwide. 🍦</p>
-  </footer>
-</body>
+    <footer class="sitefoot">Made with Tone.js — local only, no server processing.</footer>
+  </body>
 </html>

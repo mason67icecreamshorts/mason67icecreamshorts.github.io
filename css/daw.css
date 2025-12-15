@@ -1,0 +1,92 @@
+/* Dark professional DAW styles */
+:root{
+	--bg:#0f1720;
+	--panel:#11161b;
+	--muted:#b7c0c9;
+	--accent:#5eead4;
+	--primary:#60a5fa;
+	--card:#0b1116;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Ubuntu,'Helvetica Neue',Arial;margin:0;background:var(--bg);color:var(--muted);-webkit-font-smoothing:antialiased}
+.topnav{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-bottom:1px solid rgba(255,255,255,0.03)}
+.topnav .brand{font-weight:700;color:var(--accent)}
+.topnav a{color:var(--muted);text-decoration:none}
+.hero{padding:60px 20px;background:linear-gradient(180deg,rgba(0,0,0,0.08),transparent)}
+.hero-inner{max-width:920px;margin:0 auto;color:#e6eef6}
+.hero h1{margin:0 0 8px;font-size:34px}
+.hero p{margin:0 0 16px;color:#9fb6cc}
+.cta{display:inline-block;padding:10px 14px;background:var(--primary);color:#081328;border-radius:8px;text-decoration:none;font-weight:600}
+.container{max-width:1100px;margin:20px auto;padding:0 20px}
+
+.transportbar{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:var(--panel);border-bottom:1px solid rgba(255,255,255,0.03)}
+.transport-left{display:flex;align-items:center;gap:8px}
+.transport-right{display:flex;align-items:center;gap:8px}
+.btn{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 10px;border-radius:8px;cursor:pointer}
+.btn.primary,.btn.primary:hover{background:var(--primary);color:#041328;border:none}
+.bpm input{width:68px;margin-left:6px;padding:6px;border-radius:6px;border:1px solid rgba(255,255,255,0.03);background:#09101a;color:var(--muted)}
+.select{background:#081018;color:var(--muted);border:1px solid rgba(255,255,255,0.03);padding:8px;border-radius:6px}
+
+#tracks{display:grid;gap:14px;margin-top:18px}
+.track{padding:12px;border-radius:10px;background:linear-gradient(180deg,var(--card),#071018);box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
+.track .row{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+.track .name{font-weight:700;color:#e6eef6}
+.mutebtn{padding:6px;border-radius:8px}
+.steps{display:flex;gap:6px;flex-wrap:wrap}
+.step{width:28px;height:28px;border-radius:6px;background:transparent;border:1px solid rgba(255,255,255,0.04);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted)}
+.step.active{background:var(--primary);color:#021226;border:none;box-shadow:0 6px 12px rgba(40,60,120,0.18)}
+.step.playing{outline:2px solid #ffb86b}
+
+.track-controls{display:flex;gap:8px;align-items:center;margin-left:auto}
+.control-label{font-size:12px;color:#9fb6cc}
+.slider{appearance:none;height:6px;border-radius:6px;background:#07101a}
+.slider::-webkit-slider-thumb{appearance:none;width:12px;height:12px;border-radius:50%;background:var(--accent);}
+
+@media(min-width:900px){#tracks{grid-template-columns:repeat(2,1fr)}}
+
+.features{color:#cfe7ff}
+.sitefoot{padding:20px;text-align:center;color:#6c8aa3}
+
+/* DAW layout */
+.daw-app{display:grid;grid-template-columns:240px 1fr 320px;gap:18px;align-items:start;padding:18px 20px}
+.sidebar{background:linear-gradient(180deg,var(--card),#071018);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+.sidebar h3{color:#cfe7ff;margin:0 0 8px}
+.channel-item{padding:8px;border-radius:8px;background:rgba(255,255,255,0.01);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.channel-item .ch-name{flex:1;color:#e6eef6;font-weight:600}
+.channel-item button{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);padding:6px;border-radius:6px}
+
+.main-area{min-height:420px}
+.sequencer{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+
+.mixer{background:linear-gradient(180deg,var(--card),#071018);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+.mixer h3{color:#cfe7ff;margin:0 0 8px}
+.mixerChannels{display:flex;gap:8px;flex-wrap:wrap}
+.mixerChannels, #mixerChannels {display:flex;gap:8px;flex-wrap:wrap}
+.mixer-channel{width:60px;background:rgba(255,255,255,0.01);padding:8px;border-radius:8px;text-align:center}
+.mixer-channel .label{font-size:12px;color:#9fb6cc}
+.mixer-channel .fader{transform:rotate(-90deg);width:120px}
+.master-strip{margin-top:12px}
+
+@media(max-width:1000px){.daw-app{grid-template-columns:1fr;}
+.mixer{order:3}
+.sidebar{order:1}
+.main-area{order:2}
+}
+
+/* Playlist */
+.playlist{margin-top:18px;background:rgba(255,255,255,0.01);padding:10px;border-radius:8px}
+#playlistGrid{display:flex;gap:6px;flex-wrap:wrap}
+.playlist-slot{min-width:80px;padding:8px;border-radius:6px;background:rgba(255,255,255,0.02);text-align:center}
+
+/* Piano roll modal */
+.modal{position:fixed;inset:0;background:rgba(2,6,15,0.7);display:none;align-items:center;justify-content:center;z-index:1200}
+.modal[aria-hidden="false"]{display:flex}
+.modal-inner{background:var(--panel);padding:12px;border-radius:10px;max-width:900px;width:100%;color:var(--muted)}
+.modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.piano-grid{display:grid;grid-template-columns:repeat(16,1fr);gap:4px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:6px;border-radius:6px}
+.piano-row{display:flex;flex-direction:column;gap:4px}
+.piano-cell{height:28px;background:transparent;border:1px solid rgba(255,255,255,0.03);border-radius:4px;cursor:pointer}
+.piano-cell.active{background:var(--primary);color:#021226}
+.piano-rows{display:grid;grid-template-rows:repeat(12,32px);gap:4px;overflow:auto;max-height:460px}
+
+

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Warm Saw",
+    "type": "wavetable",
+    "oscillator": { "type": "fatsawtooth", "count": 3, "spread": 20 },
+    "filter": { "type": "lowpass", "frequency": 1200 }
+  },
+  {
+    "name": "Soft Piano",
+    "type": "synth",
+    "oscillator": { "type": "sine" },
+    "envelope": { "attack": 0.02, "decay": 0.2, "sustain": 0.6, "release": 0.8 }
+  }
+]
