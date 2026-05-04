@@ -3,37 +3,69 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Mini Web DAW — Home</title>
-    <link rel="stylesheet" href="css/daw.css">
+    <title>Rhythm Rush</title>
+    <link rel="stylesheet" href="css/daw.css" />
   </head>
   <body>
-    <nav class="topnav">
-      <div class="brand">Mini Web DAW</div>
-      <div class="navlinks"><a href="daw.html">Open DAW</a></div>
-    </nav>
+    <div class="game-shell">
+      <header class="titlebar">
+        <div>
+          <h1>Rhythm Rush</h1>
+          <p>Hit the falling notes with <strong>A</strong> <strong>S</strong> <strong>D</strong> <strong>F</strong> or <strong>1</strong> <strong>2</strong> <strong>3</strong> <strong>4</strong>.</p>
+        </div>
+      </header>
 
-    <header class="hero">
-      <div class="hero-inner">
-        <h1>Lightweight Web DAW</h1>
-        <p>Create beats and arrangements in your browser. Sample loading, step sequencer, per-track pan, reverb & delay, pattern saving, MIDI input and export to WAV.</p>
-        <a class="cta" href="daw.html">Open the DAW</a>
+      <div class="hud">
+        <div class="hud-panel">
+          <span class="label">Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="hud-panel">
+          <span class="label">Combo</span>
+          <strong id="combo">0</strong>
+        </div>
+        <div class="hud-panel">
+          <span class="label">Accuracy</span>
+          <strong id="accuracy">100%</strong>
+        </div>
       </div>
-    </header>
 
-    <main class="container">
-      <section class="features">
-        <h2>Features</h2>
-        <ul>
-          <li>16-step sequencer with 8 tracks</li>
-          <li>Load your own samples per track</li>
-          <li>Per-track pan, volume, mute, reverb & delay sends</li>
-          <li>Save/load patterns (localStorage)</li>
-          <li>Export mix to WAV</li>
-          <li>Basic Web MIDI support</li>
-        </ul>
-      </section>
-    </main>
+      <div class="playfield">
+        <div class="target-row">
+          <div class="target-lane">A<br><span>1</span></div>
+          <div class="target-lane">S<br><span>2</span></div>
+          <div class="target-lane">D<br><span>3</span></div>
+          <div class="target-lane">F<br><span>4</span></div>
+        </div>
+        <div class="note-area" id="noteArea"></div>
+      </div>
 
-    <footer class="sitefoot">Made with Tone.js — local only, no server processing.</footer>
+      <div class="controls">
+        <button id="startButton">Start Game</button>
+        <button id="pauseButton" disabled>Pause</button>
+        <div class="hint">Press the matching lane key or tap the buttons below when the note enters the target zone.</div>
+      </div>
+
+      <div class="level-controls">
+        <label class="upload-label">
+          Upload music
+          <input id="audioInput" type="file" accept="audio/*" />
+        </label>
+        <div id="audioStatus" class="audio-status">No song loaded.</div>
+      </div>
+
+      <div class="touch-controls" aria-label="Touch lane controls">
+        <button class="lane-button" data-lane="0">A / 1</button>
+        <button class="lane-button" data-lane="1">S / 2</button>
+        <button class="lane-button" data-lane="2">D / 3</button>
+        <button class="lane-button" data-lane="3">F / 4</button>
+      </div>
+
+      <audio id="musicPreview" preload="auto"></audio>
+
+      <div class="footer-note">Tap the lane buttons or press keys. The game runs in the browser with no external assets.</div>
+    </div>
+
+    <script src="assets/js/game.js"></script>
   </body>
 </html>

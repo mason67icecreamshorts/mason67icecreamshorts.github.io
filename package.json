@@ -1,6 +1,6 @@
 {
-  "name": "mini-web-daw",
-  "version": "0.1.0",
+  "name": "rhythm-rush",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "npx http-server -c-1 -p 8000"

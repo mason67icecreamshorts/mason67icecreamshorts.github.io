@@ -1,3 +1,23 @@
+# Rhythm Rush
+
+A browser-based rhythm game built with HTML, CSS, and JavaScript.
+
+## How to run
+
+1. Install dependencies if needed: `npm install`
+2. Start a local server: `npm start`
+3. Open `http://localhost:8000`
+
+## Controls
+
+- Press `A`, `S`, `D`, `F` or `1`, `2`, `3`, `4`
+- Hit notes as they cross the target zone
+
+## Notes
+
+- The game spawns notes automatically.
+- Score and combo are tracked live.
+- No external audio assets are required.
 # Mini Web DAW
 
 Lightweight browser-based digital audio workstation (DAW) built with Tone.js. Create patterns with a step sequencer, load samples per track, mix with pan/volume, add reverb/delay sends, save/load patterns to LocalStorage, and export mixes to WAV.
